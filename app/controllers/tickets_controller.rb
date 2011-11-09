@@ -27,6 +27,6 @@ class TicketsController < ApplicationController
   end
   
   def find_ticket
-    @ticket = @projects.tickets.find(params[:id])
+    @ticket = @project.tickets.find(params[:id])
   end
 end
