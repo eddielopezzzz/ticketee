@@ -2,12 +2,12 @@
 <%= f.error_messages %>
 <p>
 	<%= f.label :email%>
-	<%= f.text_field :email%>
+	<%= f.text_field :email, :placeholder => "Email"%>
 </p>
 
 <p>
 	<%= f.label :password %>
-	<%= f.password_field :password %>
+	<%= f.password_field :password, :placeholder => "password" %>
 </p>
 <p>
 	<%= f.check_box :admin %>
