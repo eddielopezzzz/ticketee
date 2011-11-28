@@ -8,7 +8,7 @@ class TicketsController < ApplicationController
   
   def new
     @ticket = @project.tickets.build  
-    3.times { @ticket.assets.build }
+    @ticket.assets.build 
   end
     
   def show
@@ -43,7 +43,7 @@ class TicketsController < ApplicationController
   end
   
   def edit
-    3.times { @ticket.assets.build }
+    @ticket.assets.build 
   end
   
   private
