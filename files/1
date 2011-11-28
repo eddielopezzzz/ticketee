@@ -1,0 +1,10 @@
+SELECT s.field_sku_value, n.title, r.body
+FROM `node` n, `content_type_product_info` s, `node_revisions` r
+WHERE n.nid = s.nid and n.vid = s.vid and s.nid = r.nid and s.vid = r.vid
+LIMIT 0 , 30
+
+SELECT * FROM `node` WHERE `nid`='1099'
+
+
+
+<?php print $node->field_sku[0]['view'] ?>
