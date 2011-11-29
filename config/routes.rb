@@ -9,6 +9,10 @@ resources :files
 resources :projects do
   resources :tickets
 end
+
+resources :tickets do
+  resources :comments
+end
 root :to => "projects#index"
 
 namespace :admin do
