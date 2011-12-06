@@ -1,9 +1,9 @@
-#admin_user = User.create(:email => "eddielopezzzz@hotmail.com", :password => "Kristian1")
+admin_user = User.create(:email => "eddielopezzzz@hotmail.com", :password => "Kristian1")
 
-#admin_user.admin = true
-#admin_user.confirm!
+admin_user.admin = true
+admin_user.confirm!
 
-#Project.create(:name => "blah")
+Project.create(:name => "blah")
 
 State.create(:name => "New",
              :background => "#85FF00",
