@@ -50,6 +50,10 @@ class TicketsController < ApplicationController
     @ticket.assets.build 
   end
   
+  def search
+    @tickets = @project.tickets.search(params[:search])
+    render "projects/show"
+  end
   private
   
   def find_project
