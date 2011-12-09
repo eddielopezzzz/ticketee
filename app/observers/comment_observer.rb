@@ -5,9 +5,4 @@ class CommentObserver < ActiveRecord::Observer
     end
   end
   
-  def comment_updated(comment,user)
-    @comment = comment
-    @user = user
-    mail(:to => user.email, :subject => "[ticketee] #{comment.ticket.project.name} - #{comment.ticket.title}")
-  end
 end
